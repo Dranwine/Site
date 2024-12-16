@@ -1,0 +1,15 @@
+h1{
+    display: flex;
+     justify-content: center; /* met l'image au centre de la page */
+}
+.Logo{                  /* set à dimensionner la taille du logo */
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+}
