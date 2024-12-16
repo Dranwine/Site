@@ -9,17 +9,31 @@ h1{
 }
 
 .menu{
-    display: flex;
-    justify-content: space-around;
-    font-size: 24px;
+    display: flex; /*crée une grille flex*/
+    justify-content: space-around; /*répartie équitable l'espace entre les élément*/
+    font-size: 24px; /*gère la taille de la taille du texte*/
 }
 
 .partie1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+
 }
 
 h2{
-    text-decoration: underline;
+    text-decoration: underline; /*soulligne un texte*/
+    font-size: 30px; /*gère la taille de la taille du texte*/
+    text-align: center;
+}
+p{
+    text-align: center;  
+}
+
+.partie2{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo{
+    border-radius: 200%;
+    height: 275px;
+    width: 400px;
 }
