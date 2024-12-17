@@ -9,7 +9,7 @@ h1{
 }
 
 .menu{
-    display: flex; /*crée une grille flex*/
+    display: flex; /*crée une grille flex pour mettre les élément en ligne*/
     justify-content: space-around; /*répartie équitable l'espace entre les élément*/
     font-size: 24px; /*gère la taille de la taille du texte*/
 }
@@ -29,7 +29,7 @@ p{
 
 
 .photo{
-    border-radius: 50%;
+    border-radius: 50%; /*pour mettre l'image en cercle*/
     height: 200px;
     width: 200px;
     margin: 0 auto; /* pour centrer l'image */
@@ -37,6 +37,59 @@ p{
 }
 
 .membres{
+    display: flex;/*crée une grille flex pour mettre les élément en ligne*/
+    justify-content: space-around;/*répartie équitable l'espace entre les élément*/
+}
+
+.partie3{
+    gap: 50px;
+}
+.container1{
+    display: flex; /*crée une grille flex pour mettre les élément en ligne*/
+    justify-content: space-around;/*répartie équitable l'espace entre les élément*/
+}
+
+.contact{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+}
+#message{
+    width: 83%;
+    height: 200px;
+    resize: vertical;/*redimensionnement vertical*/
+    align-self: center; /* centrer l'élément enfant*/
+}
+.texte{
+    margin-left: 8.2%;
+}
+
+/* Sélectionne tous les enfants directs de l'élément avec la classe "partie3" */
+.partie1 > * {
+    /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
+    margin-bottom: 50px;
+}
+.partie2 > * {
+    /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
+    margin-bottom: 50px;
+}
+.partie3 > * {
+    /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
+    margin-bottom: 50px;
+}
+
+main > *{
+    margin-bottom: 50px;
+}
+.bouton-containe{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 200px;
+    height: 30px;
 }
