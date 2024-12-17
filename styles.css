@@ -117,7 +117,7 @@ footer{
 
   /* Style des éléments de premier niveau de la liste principale */
   .menu > li {
-    display: inline-block; /* Affiche les éléments en ligne */
+    list-style-type: none;
     position: relative; /* Position relative pour que le sous-menu soit positionné par rapport à cet élément */
     padding: 10px; /* Ajoute de l'espace autour du texte */
   }
@@ -128,7 +128,6 @@ footer{
   .sous-menu {
     display: none; /* Cache le sous-menu par défaut */
     position: absolute; /* Positionne le sous-menu par rapport à l'élément parent */
-    top: 100%; /* Place le sous-menu juste en dessous de l'élément parent */
     left: 0; /* Aligne le sous-menu à gauche de l'élément parent */
     background-color: #f9f9f9; /* Couleur de fond du sous-menu */
     padding: 0; /* Supprime le padding par défaut du sous-menu */
