@@ -100,7 +100,6 @@ footer{
 .Logo2{
     height: 200px;
     width: 200px;
-    object-fit: contain;
 }
 
 .end{
@@ -114,3 +113,41 @@ footer{
     flex-direction: column;
     justify-content: space-around;
 }
+
+
+  /* Style des éléments de premier niveau de la liste principale */
+  .menu > li {
+    display: inline-block; /* Affiche les éléments en ligne */
+    position: relative; /* Position relative pour que le sous-menu soit positionné par rapport à cet élément */
+    padding: 10px; /* Ajoute de l'espace autour du texte */
+  }
+  /* Le sélecteur '.menu > li' cible les éléments <li> qui sont des enfants directs de .menu */
+  /* Le '>' signifie "enfant direct" */
+  
+  /* Style du sous-menu (menu déroulant) */
+  .sous-menu {
+    display: none; /* Cache le sous-menu par défaut */
+    position: absolute; /* Positionne le sous-menu par rapport à l'élément parent */
+    top: 100%; /* Place le sous-menu juste en dessous de l'élément parent */
+    left: 0; /* Aligne le sous-menu à gauche de l'élément parent */
+    background-color: #f9f9f9; /* Couleur de fond du sous-menu */
+    padding: 0; /* Supprime le padding par défaut du sous-menu */
+    list-style-type: none; /* Supprime les puces du sous-menu */
+  }
+  
+  /* Affiche le sous-menu lorsque l'utilisateur survole l'élément parent */
+  .menu > li:hover .sous-menu {
+    display: block; /* Affiche le sous-menu au survol */
+  }
+  /* Ce sélecteur '.menu > li:hover .sous-menu' signifie :
+     - Sélectionne .sous-menu qui est descendant de
+     - un élément li qui est survolé (:hover)
+     - qui est un enfant direct (>) de .menu */
+  
+  /* Style des éléments du sous-menu */
+  .sous-menu li {
+    padding: 10px; /* Ajoute de l'espace autour du texte dans le sous-menu */
+  }
+  /* '.sous-menu li' cible tous les éléments <li> à l'intérieur de .sous-menu,
+     peu importe leur niveau de profondeur */
+  
