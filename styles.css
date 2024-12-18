@@ -1,152 +1,191 @@
-h1{
+h1 {
     display: flex;
-     justify-content: center; /* met l'image au centre de la page */
+    justify-content: center;
+    /* met l'image au centre de la page */
 }
-.Logo{                  /* set à dimensionner la taille du logo */
+
+.Logo {
+    /* set à dimensionner la taille du logo */
     height: 300px;
     width: 300px;
     object-fit: contain;
 }
 
-.menu{
-    display: flex; /*crée une grille flex pour mettre les élément en ligne*/
-    justify-content: space-around; /*répartie équitable l'espace entre les élément*/
-    font-size: 24px; /*gère la taille de la taille du texte*/
+.menu {
+    display: flex;
+    /*crée une grille flex pour mettre les élément en ligne*/
+    justify-content: space-around;
+    /*répartie équitable l'espace entre les élément*/
+    font-size: 24px;
+    /*gère la taille de la taille du texte*/
 }
 
-h2{
-    text-decoration: underline; /*soulligne un texte*/
-    font-size: 30px; /*gère la taille de la taille du texte*/
+h2 {
+    text-decoration: underline;
+    /*soulligne un texte*/
+    font-size: 30px;
+    /*gère la taille de la taille du texte*/
     text-align: center;
 }
-p{
-    text-align: center;  
+
+p {
+    text-align: center;
 }
 
 
-.photo{
-    border-radius: 50%; /*pour mettre l'image en cercle*/
+.photo {
+    border-radius: 50%;
+    /*pour mettre l'image en cercle*/
     height: 200px;
     width: 200px;
-    margin: 0 auto; /* pour centrer l'image */
-    object-fit: cover; /* pour s'assurer que l'image remplit le cercle */
+    margin: 0 auto;
+    /* pour centrer l'image */
+    object-fit: cover;
+    /* pour s'assurer que l'image remplit le cercle */
 }
 
-.membres{
-    display: flex;/*crée une grille flex pour mettre les élément en ligne*/
-    justify-content: space-around;/*répartie équitable l'espace entre les élément*/
+.membres {
+    display: flex;
+    /*crée une grille flex pour mettre les élément en ligne*/
+    justify-content: space-around;
+    /*répartie équitable l'espace entre les élément*/
 }
 
-.partie3{
+.partie3 {
     gap: 50px;
 }
-.container1{
-    display: flex; /*crée une grille flex pour mettre les élément en ligne*/
-    justify-content: space-around;/*répartie équitable l'espace entre les élément*/
+
+.container1 {
+    display: flex;
+    /*crée une grille flex pour mettre les élément en ligne*/
+    justify-content: space-around;
+    /*répartie équitable l'espace entre les élément*/
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
 }
 
-.container2{
+.container2 {
     display: flex;
     flex-direction: column;
 }
-#message{
+
+#message {
     width: 83%;
     height: 200px;
-    resize: vertical;/*redimensionnement vertical*/
-    align-self: center; /* centrer l'élément enfant*/
+    resize: vertical;
+    /*redimensionnement vertical*/
+    align-self: center;
+    /* centrer l'élément enfant*/
 }
-.texte{
+
+.texte {
     margin-left: 8.2%;
 }
 
 /* Sélectionne tous les enfants directs de l'élément avec la classe "partie3" */
-.partie1 > * {
-    /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
-    margin-bottom: 50px;
-}
-.partie2 > * {
-    /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
-    margin-bottom: 50px;
-}
-.partie3 > * {
+.partie1>* {
     /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
     margin-bottom: 50px;
 }
 
-main > *{
+.partie2>* {
     /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
     margin-bottom: 50px;
 }
-.bouton-containe{
-    display: flex;
-    justify-content: center; /* met le bouton au centre de la page*/
+
+.partie3>* {
+    /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
+    margin-bottom: 50px;
 }
-button{
+
+main>* {
+    /* Ajoute une marge de 50 pixels en bas de chaque élément enfant direct */
+    margin-bottom: 50px;
+}
+
+.bouton-containe {
+    display: flex;
+    justify-content: center;
+    /* met le bouton au centre de la page*/
+}
+
+button {
     width: 200px;
     height: 30px;
 }
 
-footer{
+footer {
     display: flex;
-    justify-content: space-between; /* met le plus despace possible entre les fils de footer*/
+    justify-content: space-between;
+    /* met le plus despace possible entre les fils de footer*/
 }
 
 
-.Logo2{
+.Logo2 {
     height: 200px;
     width: 200px;
 }
 
-.end{
+.end {
     display: flex;
     justify-content: space-between;
     flex-grow: 0.1;
 }
 
-.lien{
+.lien {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 
-  /* Style des éléments de premier niveau de la liste principale */
-  .menu > li {
+/* Style des éléments de premier niveau de la liste principale */
+.menu>li {
     list-style-type: none;
-    position: relative; /* Position relative pour que le sous-menu soit positionné par rapport à cet élément */
-    padding: 10px; /* Ajoute de l'espace autour du texte */
-  }
-  /* Le sélecteur '.menu > li' cible les éléments <li> qui sont des enfants directs de .menu */
-  /* Le '>' signifie "enfant direct" */
-  
-  /* Style du sous-menu (menu déroulant) */
-  .sous-menu {
-    display: none; /* Cache le sous-menu par défaut */
-    position: absolute; /* Positionne le sous-menu par rapport à l'élément parent */
-    left: 0; /* Aligne le sous-menu à gauche de l'élément parent */
-    background-color: #f9f9f9; /* Couleur de fond du sous-menu */
-    padding: 0; /* Supprime le padding par défaut du sous-menu */
-    list-style-type: none; /* Supprime les puces du sous-menu */
-  }
-  
-  /* Affiche le sous-menu lorsque l'utilisateur survole l'élément parent */
-  .menu > li:hover .sous-menu {
-    display: block; /* Affiche le sous-menu au survol */
-  }
-  /* Ce sélecteur '.menu > li:hover .sous-menu' signifie :
-     - Sélectionne .sous-menu qui est descendant de
-     - un élément li qui est survolé (:hover)
+    position: relative;
+    /* Position relative pour que le sous-menu soit positionné par rapport à cet élément */
+    padding: 10px;
+    /* Ajoute de l'espace autour du texte */
+}
+
+/* Le sélecteur '.menu > li' cible les éléments <li> qui sont des enfants directs de .menu */
+/* Le '>' signifie "enfant direct" */
+
+/* Style du sous-menu (menu déroulant) */
+.sous-menu {
+    display: none;
+    /* Cache le sous-menu par défaut */
+    position: absolute;
+    /* Positionne le sous-menu par rapport à l'élément parent */
+    left: 0;
+    /* Aligne le sous-menu à gauche de l'élément parent */
+    background-color: #f9f9f9;
+    /* Couleur de fond du sous-menu */
+    padding: 0;
+    /* Supprime le padding par défaut du sous-menu */
+    list-style-type: none;
+    /* Supprime les puces du sous-menu */
+}
+
+/* Affiche le sous-menu lorsque l'utilisateur survole l'élément parent */
+.menu>li:hover .sous-menu {
+    display: block;
+    /* Affiche le sous-menu au survol */
+}
+
+/* Ce sélecteur '.menu > li:hover .sous-menu' signifie :
+    - Sélectionne .sous-menu qui est descendant de
+    - un élément li qui est survolé (:hover)
      - qui est un enfant direct (>) de .menu */
-  
-  /* Style des éléments du sous-menu */
-  .sous-menu li {
-    padding: 10px; /* Ajoute de l'espace autour du texte dans le sous-menu */
-  }
-  /* '.sous-menu li' cible tous les éléments <li> à l'intérieur de .sous-menu,
+
+/* Style des éléments du sous-menu */
+.sous-menu li {
+    padding: 10px;
+    /* Ajoute de l'espace autour du texte dans le sous-menu */
+}
+
+/* '.sous-menu li' cible tous les éléments <li> à l'intérieur de .sous-menu,
      peu importe leur niveau de profondeur */
-  
